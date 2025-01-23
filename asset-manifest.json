@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/cicala44.github.io/static/css/main.ce936fb5.css",
+    "main.js": "/cicala44.github.io/static/js/main.d9459e3a.js",
+    "static/js/488.0b92d438.chunk.js": "/cicala44.github.io/static/js/488.0b92d438.chunk.js",
+    "static/media/unnamed.jpg": "/cicala44.github.io/static/media/unnamed.2fa04e96f66afa798672.jpg",
+    "static/media/Santa Cruz bike.jpg": "/cicala44.github.io/static/media/Santa Cruz bike.459b95fadcbf29e97ca7.jpg",
+    "static/media/Santa Cruz Swim.jpg": "/cicala44.github.io/static/media/Santa Cruz Swim.a3ea270ed86c11e28320.jpg",
+    "static/media/Santa Cruz run2.jpg": "/cicala44.github.io/static/media/Santa Cruz run2.35ccf375f02e72715bc9.jpg",
+    "index.html": "/cicala44.github.io/index.html",
+    "main.ce936fb5.css.map": "/cicala44.github.io/static/css/main.ce936fb5.css.map",
+    "main.d9459e3a.js.map": "/cicala44.github.io/static/js/main.d9459e3a.js.map",
+    "488.0b92d438.chunk.js.map": "/cicala44.github.io/static/js/488.0b92d438.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce936fb5.css",
+    "static/js/main.d9459e3a.js"
+  ]
+}
