@@ -1,0 +1,56 @@
+#comment-section{
+    background-color: gray;
+    height: 50rem;
+    padding-top: 1rem;
+}
+
+#comment-section-title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#comment-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clickable-card{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 450px){
+    #left-arrow-container-card{
+        width: 3rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 5px;
+    }
+    
+    #right-arrow-container-card{
+        width: 3rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: calc(100% - (3rem + 5px));
+    }
+    
+    #left-arrow-card{
+        width: 50%;
+        height: 80%;
+        transform: rotate(180deg);
+        cursor: pointer;
+    }
+    
+    #right-arrow-card{
+        width: 50%;
+        height: 80%;
+        cursor: pointer;
+    }
+}

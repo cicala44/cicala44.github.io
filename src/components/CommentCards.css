@@ -1,0 +1,58 @@
+.comment-card{
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 1rem;
+    width: 30rem;
+    height: 40rem;
+    margin: 2rem;
+}
+
+.comment-card-shrink{
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 1rem;
+    opacity: 50%;
+    width: 25rem;
+    height: 35rem;
+    margin: 2rem;
+    font-size: small;
+}
+
+.comment{
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    white-space: pre-wrap;
+}
+
+.comment-shrink{
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    white-space: pre-wrap;
+}
+
+.writer{
+    width: 90%;
+    height: 5%;
+    margin: auto;
+}
+
+.writer-shrink{
+    width: 80%;
+    height: 5%;
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 450px){
+    .comment-card{
+        background-color: white;
+        border: solid 1px black;
+        border-radius: 1rem;
+        width: 90vw;
+        height: 40rem;
+        margin: 2rem;
+        font-size: small;
+    }
+}
