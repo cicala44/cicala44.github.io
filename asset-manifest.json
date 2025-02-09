@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.6d13b2be.css",
-    "main.js": "/static/js/main.26a94cd2.js",
+    "main.css": "/static/css/main.079c5c72.css",
+    "main.js": "/static/js/main.a1681f6d.js",
     "static/js/488.0b92d438.chunk.js": "/static/js/488.0b92d438.chunk.js",
     "static/media/unnamed.jpg": "/static/media/unnamed.2fa04e96f66afa798672.jpg",
     "static/media/Santa Cruz bike.jpg": "/static/media/Santa Cruz bike.459b95fadcbf29e97ca7.jpg",
     "static/media/Santa Cruz Swim.jpg": "/static/media/Santa Cruz Swim.a3ea270ed86c11e28320.jpg",
     "static/media/Santa Cruz run2.jpg": "/static/media/Santa Cruz run2.35ccf375f02e72715bc9.jpg",
     "index.html": "/index.html",
-    "main.6d13b2be.css.map": "/static/css/main.6d13b2be.css.map",
-    "main.26a94cd2.js.map": "/static/js/main.26a94cd2.js.map",
+    "main.079c5c72.css.map": "/static/css/main.079c5c72.css.map",
+    "main.a1681f6d.js.map": "/static/js/main.a1681f6d.js.map",
     "488.0b92d438.chunk.js.map": "/static/js/488.0b92d438.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d13b2be.css",
-    "static/js/main.26a94cd2.js"
+    "static/css/main.079c5c72.css",
+    "static/js/main.a1681f6d.js"
   ]
 }
