@@ -54,5 +54,7 @@
         height: 40rem;
         margin: 2rem;
         font-size: small;
+        display: flex;
+        flex-direction: column;
     }
 }

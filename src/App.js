@@ -23,7 +23,7 @@ function App() {
             Meet The Coach
           </h1>
           <p>
-            Coach Chris has been involved in multi sport and endurance events for over 14 years and has completed more than 100 races including multiple Ironman and 70.3 events!
+            Coach Chris has been involved in multisport and endurance events for over 14 years and has completed more than 100 races including multiple Ironman and 70.3 events!
           </p>
           <p>
             Inspired years ago by a simple bike ride on a sunny afternoon a fire was lit that burns larger and hotter than ever with the opportunity to bring endurance into the lives of others!
@@ -38,6 +38,22 @@ function App() {
           <p>
             Through the use of Polarized Training (Heart rate based training), with proper recovery and a fitness/life balance, custom plans are created for each athlete to  attain their goals.
           </p>
+      </div>
+      <div id="certificates-section">
+        <h1>
+          Certificates
+        </h1>
+        <div class="certificate-display">
+          <div class="certificate">
+            USAT Certified Triathlon Coach
+          </div>
+          <div class="certificate">
+            USAT Polarized Certified Coach
+          </div>
+          <div class="certificate">
+            USAT Short Course Certified Coach
+          </div>
+        </div>
       </div>
       <div id="service-section">
           <h1>
@@ -77,24 +93,27 @@ function App() {
         <CommentSection/>
       </div>
       <div id="footer-section">
-        <div id="email-section">
-          <div className="footer-text-section">
-            Email
-          </div>
-          <div>
-            endurancelegion@gmail.com
-          </div>
-        </div>
-        <div id="social-section">
-          <div className="footer-text-section">
-            Follow
-          </div>
-          <div id="social-images-section">
-            <div className="social-option">
-              <img className="social-image" src="./assets/facebook.png" onClick={() => goToLink("https://www.facebook.com/profile.php?id=61569413314440")}/>
+        <h1>Contact</h1>
+        <div id="footer-display">
+          <div id="email-section">
+            <div className="footer-text-section">
+              For further inquiries and to set up a consulation, please reach out via email
             </div>
-            <div className="social-option">
-              <img className="social-image" src="./assets/instagram.png" onClick={() => goToLink("https://www.instagram.com/endurance.legion/?hl=en")}/>
+            <div>
+              endurancelegion@gmail.com
+            </div>
+          </div>
+          <div id="social-section">
+            <div className="footer-text-section">
+              Follow
+            </div>
+            <div id="social-images-section">
+              <div className="social-option">
+                <img className="social-image" src="./assets/facebook.png" onClick={() => goToLink("https://www.facebook.com/profile.php?id=61569413314440")}/>
+              </div>
+              <div className="social-option">
+                <img className="social-image" src="./assets/instagram.png" onClick={() => goToLink("https://www.instagram.com/endurance.legion/?hl=en")}/>
+              </div>
             </div>
           </div>
         </div>

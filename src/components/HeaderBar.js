@@ -30,6 +30,7 @@ const HeaderBar = (props) =>
                     <NavButton ref="#About" text="About"/>
                     <NavButton ref="#Philosophy" text="Philosophy"/>
                     <NavButton ref="#service-section" text="Services"/>
+                    <NavButton ref="#certificates-section" text="Certificates"/>
                     <NavButton ref="#Testimonials" text="Testimonials"/>
                     <NavButton ref="#footer-section" text="Contact"/>
                 </div>
@@ -42,6 +43,7 @@ const HeaderBar = (props) =>
                         <NavButton ref="#About" text="About" mobileHandler={toggleHamburger}/>
                         <NavButton ref="#Philosophy" text="Philosophy" mobileHandler={toggleHamburger}/>
                         <NavButton ref="#service-section" text="Services" mobileHandler={toggleHamburger}/>
+                        <NavButton ref="#certificates-section" text="Certificates" mobileHandler={toggleHamburger}/>
                         <NavButton ref="#Testimonials" text="Testimonials" mobileHandler={toggleHamburger}/>
                         <NavButton ref="#footer-section" text="Contact" mobileHandler={toggleHamburger}/>
                     </div>
