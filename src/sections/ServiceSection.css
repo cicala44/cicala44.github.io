@@ -1,0 +1,27 @@
+.service-section-container {
+    width: 90%;
+    height: auto;
+    padding: 5%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-content-container {
+    width: 80%;
+    height: auto;
+}
+
+.service-options-container {
+    width: 100%;
+    height: 90%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}

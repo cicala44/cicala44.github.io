@@ -1,0 +1,11 @@
+.footer-social-option{
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer-social-image{
+  width: 100%;
+  height: 100%;
+  filter: invert(1);
+  cursor: pointer;
+}

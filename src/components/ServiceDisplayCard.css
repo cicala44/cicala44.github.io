@@ -1,0 +1,30 @@
+.service-display-card-container {
+    height: 17rem;
+    width: 18rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: gray;
+}
+
+.service-display-card-content-container {
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.service-display-card-name {
+    width: 100%;
+    height: 20%;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-display-card-options {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}

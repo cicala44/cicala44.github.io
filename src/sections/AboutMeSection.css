@@ -1,0 +1,141 @@
+.about-me-section-container {
+    width: 90%;
+    height: auto;
+    padding: 5%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-content-container {
+    width: 70%;
+    height: 30rem;
+}
+
+.about-me-content-section {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-me-text-content-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-me-text-content-title {
+    width: 72.5%;
+    height: 20%;
+    padding-left: 25%;
+    padding-right: 2.5%;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+}
+
+.about-me-text-content {
+    width: 72.5%;
+    padding-left: 25%;
+    padding-right: 2.5%;
+    font-size: larger;
+}
+
+.about-me-image-content-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-image-content {
+    width: 70%;
+    padding-right: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-me-profile-image {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+    .about-me-content-container {
+        width: 90%;
+        height: 37rem;
+    }
+
+    .about-me-text-content-title {
+        width: 97.5%;
+        padding-left: 0;
+    }
+
+    .about-me-text-content {
+        width: 97.5%;
+        padding-left: 0;
+    }
+
+    .about-me-image-content {
+        width: 80%;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .about-me-content-section {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me-content-container {
+        width: 90%;
+        height: auto;
+    }
+
+    .about-me-image-content-container {
+        width: 100%;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .about-me-image-content {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .about-me-text-content-container {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-me-text-content-title {
+        width: 100%;
+        height: 20%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0.5rem;
+        font-size: x-large;
+        font-weight: 500;
+    }
+
+    .about-me-text-content {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: medium;
+    }
+}

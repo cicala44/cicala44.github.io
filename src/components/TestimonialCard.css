@@ -1,0 +1,115 @@
+.testimonial-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.testimonial-text-container {
+    width: 60%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #cccccc;
+    box-shadow: inset 5px 5px 10px #b0b0b0, inset -5px -5px 10px #ffffff;
+}
+
+.testimonial-image-container {
+    width: 40%;
+    height: calc(100% + 2rem);
+    transform: translateY(-1rem);
+    border-left: 2px solid #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5%;
+}
+
+.testimonial-display-image-container {
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-display-image-container-2x {
+    width: 90%;
+    height: 40%;
+    margin: 2.5%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-display-image {
+    width: 100%;
+}
+
+.testimonial-header-container {
+    width: 90%;
+    height: 15%;
+    margin-bottom: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #cccccc;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.testimonial-name {
+    width: 100%;
+    margin: 0;
+}
+
+.testimonial-title {
+    width: 100%;
+    margin: 0;
+}
+
+.testimonial-content {
+    width: 95%;
+    height: 75%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 5%;
+    overflow-y: scroll;
+    white-space: pre-wrap;
+}
+
+@media only screen and (max-width: 550px) {
+    .testimonial-card {
+        flex-direction: column;
+    }
+
+    .testimonial-text-container {
+        width: 100%;
+        height: 50%;
+        border-radius: 0 0 10px 10px;
+        border: 1px solid #cccccc;
+        box-shadow: inset 5px 5px 10px #b0b0b0, inset -5px -5px 10px #ffffff;
+    }
+
+    .testimonial-header-container {
+        height: 30%;
+    }
+
+    .testimonial-content {
+        height: 55%;
+    }
+
+    .testimonial-image-container {
+        width: calc(100% + 4rem);
+        height: auto;
+        transform: translateX(-2rem);
+        border-top: 1px solid #cccccc;
+        border-left: 0;
+    }
+}
