@@ -1,4 +1,6 @@
 import cert1 from "../assets/certificateAssets/image.png"
+import cert2 from "../assets/certificateAssets/usmscc.jfif"
+import cert3 from "../assets/certificateAssets/rrcacc.png"
 
 export const certificates = [
     {
@@ -15,10 +17,10 @@ export const certificates = [
     },
     {
         name: "U.S. Masters Swim Coach",
-        image: cert1
+        image: cert2
     },
     {
         name: "Road Runners Club of America Cerified Run Coach",
-        image: cert1
+        image: cert3
     }
 ]
