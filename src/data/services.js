@@ -1,7 +1,7 @@
 export const services = [
     {
         name: "Level 1",
-        features: ["Weekly custom plans in monthly blocks (currently reads 4 week blocks)", "Daily analysis and review of workouts via text/email", "Weekly phone recap of workouts and goals", "Video analysis of workouts", "Nutrition assistance", "Equipment assistance"]
+        features: ["Weekly custom plans in monthly blocks", "Daily analysis and review of workouts via text/email", "Weekly phone recap of workouts and goals", "Video analysis of workouts", "Nutrition assistance", "Equipment assistance"]
     },
     {
         name: "Level 2",
