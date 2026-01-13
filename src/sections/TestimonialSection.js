@@ -54,7 +54,7 @@ const TestimonialSection = (props) => {
     const previewCards = [testimonials[(((loadIndex - 2) % testimonials.length) + testimonials.length) % testimonials.length], testimonials[(((loadIndex - 1) % testimonials.length) + testimonials.length) % testimonials.length], testimonials[loadIndex], testimonials[(loadIndex + 1) % testimonials.length], testimonials[(((loadIndex + 2) % testimonials.length) + testimonials.length) % testimonials.length]].map((testimonial, index) => {
         return (
             <motion.div id={index === 1 ? "left" : index === 3 ? "right" : index < 1 ? "left-hidden" : index > 3 ? "right-hidden" : "main"} onClick={() => (index === 1 ? tickLoadIndex('left') : index === 3 ? tickLoadIndex('right') : null)}
-                key={testimonial.name + testimonial.id + index}
+                key={testimonial.name + testimonial.id}
                 custom={direction}
                 variants={variants}
                 initial={false}
@@ -69,6 +69,7 @@ const TestimonialSection = (props) => {
                     previewImage={testimonial.previewImage}
                     testimonial={testimonial.testimonial}
                     testimonialImages={testimonial.testimonialImages}
+                    mobileImage={testimonial.mobileImage}
                     isMain={index === 2}
                 />
             </motion.div>

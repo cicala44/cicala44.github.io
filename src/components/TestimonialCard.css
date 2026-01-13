@@ -108,7 +108,7 @@
 
     .testimonial-image-container {
         width: calc(100% + 4rem);
-        height: auto;
+        height: 50%;
         transform: translateX(-2rem);
         border-top: 1px solid #cccccc;
         border-left: 0;

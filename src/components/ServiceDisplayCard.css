@@ -1,6 +1,6 @@
 .service-display-card-container {
-    width: clamp(18rem, 20vw, 21rem);
-    height: clamp(21rem, 20vw, 26rem);
+    width: clamp(18rem, 20vw, 26rem);
+    height: clamp(21rem, 20vw, 30rem);
     padding: 0.5rem;
     border-radius: 1rem;
     margin: 1rem;

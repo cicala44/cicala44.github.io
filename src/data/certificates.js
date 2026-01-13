@@ -12,7 +12,7 @@ export const certificates = [
         image: cert1
     },
     {
-        name: "Road Runners Club of America Cerified Run Coach",
+        name: "RRCA Certified Run Coach",
         image: cert3
     },
     {

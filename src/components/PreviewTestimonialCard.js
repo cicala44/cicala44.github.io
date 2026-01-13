@@ -9,13 +9,15 @@ const variants = {
     open: testimonyCardAnimationWrapperSize => (
         window.innerWidth > 550 ?
             {
-                transform: ["translate(-50%, -40%)", "translate(-50%, -50%)", "translate(-50%, -50%)"],
+                x: ["-50%", "-50%", "-50%"],
+                y: ["-40%", "-50%", "-50%"],
                 width: [testimonyCardAnimationWrapperSize.current[0] * 0.6, testimonyCardAnimationWrapperSize.current[0] * 0.6, testimonyCardAnimationWrapperSize.current[0] * 1],
                 opacity: [0, 1, 1]
             }
             :
             {
-                transform: ["translate(-50%, -40%)", "translate(-50%, -50%)", "translate(-50%, -50%)"],
+                x: ["-50%", "-50%", "-50%"],
+                y: ["-40%", "-50%", "-50%"],
                 height: [testimonyCardAnimationWrapperSize.current[1] * 0.5, testimonyCardAnimationWrapperSize.current[1] * 0.5, testimonyCardAnimationWrapperSize.current[1] * 1],
                 opacity: [0, 1, 1]
             }
@@ -23,20 +25,22 @@ const variants = {
     close: testimonyCardAnimationWrapperSize => (
         window.innerWidth > 550 ?
             {
-                transform: ["translate(-50%, -50%)", "translate(-50%, -50%)", "translate(-50%, -40%)"],
+                x: ["-50%", "-50%", "-50%"],
+                y: ["-50%", "-50%", "-40%"],
                 width: [testimonyCardAnimationWrapperSize.current[0] * 1, testimonyCardAnimationWrapperSize.current[0] * 0.6, testimonyCardAnimationWrapperSize.current[0] * 0.6],
                 opacity: [1, 1, 0],
             }
             :
             {
-                transform: ["translate(-50%, -50%)", "translate(-50%, -50%)", "translate(-50%, -40%)"],
+                x: ["-50%", "-50%", "-50%"],
+                y: ["-50%", "-50%", "-40%"],
                 height: [testimonyCardAnimationWrapperSize.current[1] * 1, testimonyCardAnimationWrapperSize.current[1] * 0.5, testimonyCardAnimationWrapperSize.current[1] * 0.5],
                 opacity: [1, 1, 0],
             }
     )
 };
 
-const PreviewTestimonialCard = ({ id, name, title, previewImage, testimonial, testimonialImages, isMain }) => {
+const PreviewTestimonialCard = ({ id, name, title, previewImage, testimonial, testimonialImages, mobileImage, isMain }) => {
     const [displayContent, setDisplayContent] = useState(false);
     const [isInViewPort, setIsInViewport] = useState(false);
     const testimonyCardAnimationWrapperSize = useRef([0, 0]);
@@ -166,6 +170,7 @@ const PreviewTestimonialCard = ({ id, name, title, previewImage, testimonial, te
                                         title={title}
                                         testimonial={testimonial}
                                         testimonialImages={testimonialImages}
+                                        mobileImage={mobileImage}
                                     />
                                 </div>
                             </div>

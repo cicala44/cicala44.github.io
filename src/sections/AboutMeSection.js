@@ -37,7 +37,7 @@ const AboutMeSection = () => {
                                 Hi, I'm Chris!
                             </div>
                             <div className="about-me-text-content">
-                                I have been involved in multisport and endurance events for over 15 years and has completed more than 100 races including multiple Ironman and 70.3 events! Inspired years ago by a simple bike ride on a sunny afternoon a fire was lit that burns larger and hotter than ever with the opportunity to bring endurance into the lives of others!
+                                I have been involved in multisport and endurance events for over 15 years and have completed more than 100 races including multiple Ironman and 70.3 events! Inspired years ago by a simple bike ride on a sunny afternoon a fire was lit that burns larger and hotter than ever with the opportunity to bring endurance into the lives of others!
                             </div>
                         </div>
                         <div className="about-me-image-content-container">

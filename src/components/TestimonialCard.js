@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./TestimonialCard.css"
 
-const TestimonialCard = ({ id, name, title, testimonial, testimonialImages }) => {
+const TestimonialCard = ({ id, name, title, testimonial, testimonialImages, mobileImage }) => {
     const [windowSize, setWindowSize] = useState({ width: undefined, height: undefined })
 
     useEffect(() => {
@@ -37,9 +37,10 @@ const TestimonialCard = ({ id, name, title, testimonial, testimonialImages }) =>
                     )
                 })
             } else {
+                const displayImage = mobileImage ? mobileImage : images[0];
                 return (
-                    <div key={"testimonial-image" + images[0]} className={"testimonial-display-image-container"}>
-                        <img className="testimonial-display-image" src={images[0]} alt={name + " image"} key={name + "displayImage"} />
+                    <div key={"testimonial-image" + displayImage} className={"testimonial-display-image-container"}>
+                        <img className="testimonial-display-image" src={displayImage} alt={name + " image"} key={name + "displayImage"} />
                     </div>
                 )
             }
