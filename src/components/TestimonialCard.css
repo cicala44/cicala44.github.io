@@ -82,6 +82,7 @@
     padding-bottom: 5%;
     overflow-y: scroll;
     white-space: pre-wrap;
+    font-size: clamp(1rem, 1vw, 1.25rem);
 }
 
 @media only screen and (max-width: 550px) {

@@ -106,7 +106,7 @@ const ImageGallerySection = () => {
                     null
                 }
                 <div className="section-title">
-                    <h1 style={{ margin: 0 }}>Gallery</h1>
+                    Gallery
                 </div>
                 {showExtended ?
                     <div className="image-gallery-show-less-button">

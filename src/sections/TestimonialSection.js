@@ -88,7 +88,7 @@ const TestimonialSection = (props) => {
     return (
         <div className="testimonial-section-container">
             <div className="section-title">
-                <h1 style={{ margin: 0 }}>Testimonials</h1>
+                Testimonials
             </div>
             <div className="preview-cards-container">
                 {previewCards}

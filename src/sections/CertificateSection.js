@@ -15,7 +15,7 @@ const CertificateSection = () => {
         <div className="certificate-section-container">
             <div className="certificate-content-container">
                 <div className="section-title">
-                    <h1 style={{ margin: 0 }}>Certificates</h1>
+                    Certificates
                 </div>
                 <div className="certificate-display-container">
                     {generateCertificateDisplays}

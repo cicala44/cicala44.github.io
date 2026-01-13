@@ -56,7 +56,7 @@
 
 .image-gallery-images-limited {
     width: 100%;
-    height: calc((12rem * 3) + 2rem);
+    height: calc((clamp(12rem, 15vw, 18rem) * 3) + 2rem);
     overflow: hidden;
     padding-top: 10%;
     display: flex;

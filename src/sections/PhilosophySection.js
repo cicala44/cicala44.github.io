@@ -6,7 +6,7 @@ const PhilosophySection = () => {
         <div className="philosophy-section-container">
             <div className="philosophy-content-container">
                 <div className="section-title">
-                    <h1 style={{ margin: 0 }}>Philosophy</h1>
+                    Philosophy
                 </div>
                 <div className="philosophy-content-section">
                     <div className="philosophy-text-content">

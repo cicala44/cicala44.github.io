@@ -1,6 +1,6 @@
 .preview-testimonial-card {
-  width: 22rem;
-  height: 29rem;
+  width: clamp(22rem, 18vw, 40rem);
+  height: clamp(29rem, 25vw, 35rem);
   background-color: gray;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }

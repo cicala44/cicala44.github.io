@@ -28,7 +28,7 @@ const AboutMeSection = () => {
         <div className="about-me-section-container">
             <div className="about-me-content-container">
                 <div className="section-title">
-                    <h1 style={{ margin: 0 }}>Meet the Coach</h1>
+                    Meet the Coach
                 </div>
                 {windowSize.width > MOBILE_WIDTH ?
                     <div className="about-me-content-section">

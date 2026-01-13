@@ -7,7 +7,7 @@ const VideoSection = () => {
         <div className="video-section-container">
             <div className="video-content-container">
                 <div className="section-title">
-                    <h1 style={{ margin: 0 }}>Preview</h1>
+                    Preview
                 </div>
                 <div className="video-content">
                     <video className="video-wrapper" controls>

@@ -36,7 +36,7 @@ const NavBar = (props) => {
     }
 
     const navButtonLayout = () => {
-        if (windowSize.width > 750) {
+        if (windowSize.width > 1150) {
             return (
                 <div id="nav-button-section">
                     <NavButton ref="#About" text="About" />

@@ -1,6 +1,6 @@
 .service-display-card-container {
-    height: 17rem;
-    width: 18rem;
+    width: clamp(18rem, 20vw, 21rem);
+    height: clamp(21rem, 20vw, 26rem);
     padding: 0.5rem;
     border-radius: 1rem;
     margin: 1rem;
@@ -27,4 +27,5 @@
     height: 80%;
     display: flex;
     justify-content: center;
+    font-size: clamp(1.15rem, 1vw, 1.5rem);
 }

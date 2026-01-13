@@ -1,5 +1,5 @@
 .nav-button{
-    height: 2.5rem;
+    height: clamp(2.5rem, 25%, 40%);
     padding: 0 1rem 0 1rem;
     margin: 1rem 0 1rem 0;
     background-color: black;
@@ -17,7 +17,7 @@
 .anchor-text{
     color: white;
     text-decoration: none;
-    font-size: large;
+    font-size: clamp(1rem, 2vw, 2rem);
 }
 
 @keyframes navButtonHover {

@@ -1,6 +1,6 @@
 .image-display-card-container {
-    width: 12rem;
-    height: 12rem;
+    width: clamp(12rem, 15vw, 18rem);
+    height: clamp(12rem, 15vw, 18rem);
     display: flex;
     justify-content: center;
     align-items: center;

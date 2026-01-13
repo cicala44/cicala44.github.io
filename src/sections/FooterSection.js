@@ -20,32 +20,3 @@ const FooterSection = () => {
     );
 }
 export default FooterSection;
-
-/*
-<div id="footer-section">
-        <h1>Contact</h1>
-        <div id="footer-display">
-          <div id="email-section">
-            <div className="footer-text-section">
-              For further inquiries and to set up a consulation, please reach out via email
-            </div>
-            <div>
-              endurancelegion@gmail.com
-            </div>
-          </div>
-          <div id="social-section">
-            <div className="footer-text-section">
-              Follow
-            </div>
-            <div id="social-images-section">
-              <div className="social-option">
-                <img className="social-image" src="./assets/facebook.png" onClick={() => goToLink("https://www.facebook.com/profile.php?id=61569413314440")} />
-              </div>
-              <div className="social-option">
-                <img className="social-image" src="./assets/instagram.png" onClick={() => goToLink("https://www.instagram.com/endurance.legion/?hl=en")} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      */

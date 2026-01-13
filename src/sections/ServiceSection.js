@@ -16,7 +16,7 @@ const ServiceSection = () => {
         <div className="service-section-container">
             <div className="service-content-container">
                 <div className="section-title">
-                    <h1 style={{ margin: 0 }}>Services</h1>
+                    Services
                 </div>
                 <div className="service-options-container">
                     {serviceOptions}
