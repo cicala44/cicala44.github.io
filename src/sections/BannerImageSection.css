@@ -15,7 +15,7 @@
 
 .banner-slogan-wrapper {
     width: 100%;
-    height: clamp(41rem, calc(90vh + 1rem), 61rem);
+    height: clamp(41rem, calc(90vh + 1rem), 60rem);
     position: absolute;
     transform: translateY(-1rem);
     overflow: hidden;

@@ -12,6 +12,10 @@ export const certificates = [
         image: cert1
     },
     {
+        name: "Road Runners Club of America Cerified Run Coach",
+        image: cert3
+    },
+    {
         name: "USAT Short Course Certified Coach",
         image: cert1
     },
@@ -19,8 +23,4 @@ export const certificates = [
         name: "U.S. Masters Swim Coach",
         image: cert2
     },
-    {
-        name: "Road Runners Club of America Cerified Run Coach",
-        image: cert3
-    }
 ]
