@@ -1,0 +1,55 @@
+.banner-image-section {
+    height: clamp(44rem, 90vh, 60rem);
+    background-color: purple;
+}
+
+.banner-image {
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/headerAssets/Santa\ Cruz\ bike.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner-slogan-wrapper {
+    width: 100%;
+    height: clamp(41rem, calc(90vh + 1rem), 60rem);
+    position: absolute;
+    transform: translateY(-1rem);
+    overflow: hidden;
+}
+
+.banner-slogan-container {
+    width: 50%;
+    height: 50%;
+    background: radial-gradient(circle at -60% -110%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0) 70%);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0);
+    padding-right: 50%;
+    padding-bottom: 50%;
+}
+
+.banner-slogan {
+    width: 70%;
+    height: 10%;
+    padding: 10%;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    color: white;
+}
+
+@media only screen and (max-width: 750px) {
+    .banner-slogan {
+        width: 80%;
+        height: 40%;
+        padding: 10%;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+    }
+}
