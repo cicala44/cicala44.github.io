@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2da6c8e0.css",
-    "main.js": "/static/js/main.c7ce6cce.js",
+    "main.js": "/static/js/main.d4bf14ab.js",
     "static/js/488.0534d642.chunk.js": "/static/js/488.0534d642.chunk.js",
     "static/media/EnduranceLegionIG.mp4": "/static/media/EnduranceLegionIG.53e283474dcdf57a69e9.mp4",
     "static/media/RE1.jpg": "/static/media/RE1.38a08225a0a3fb2f7639.jpg",
@@ -13,19 +13,27 @@
     "static/media/84A35E40-DCBC-423E-B4F4-9575BB737EDD.jpg": "/static/media/84A35E40-DCBC-423E-B4F4-9575BB737EDD.6b8e47139b39fd6d6863.jpg",
     "static/media/3A.jpg": "/static/media/3A.cbc65263296c58faf7e9.jpg",
     "static/media/97A8F998-F056-41C5-84A8-0B59F34A05EC.jpg": "/static/media/97A8F998-F056-41C5-84A8-0B59F34A05EC.ade854f6f6e651e4b49d.jpg",
+    "static/media/bc560458-a65b-4b94-8698-4fdc5fb31caf.png": "/static/media/bc560458-a65b-4b94-8698-4fdc5fb31caf.ab14a37b38f4c9910bf9.png",
+    "static/media/c906af27-e32e-46ab-98af-b4497d31f129.png": "/static/media/c906af27-e32e-46ab-98af-b4497d31f129.22fa83dbf3b5d591d862.png",
     "static/media/A7F7309-0E2D-4C8B-BD04-730780F49786.png": "/static/media/A7F7309-0E2D-4C8B-BD04-730780F49786.bff41c5f1761b7cec1b9.png",
+    "static/media/ee66faf1-0064-4cce-acb7-fb885840198c.png": "/static/media/ee66faf1-0064-4cce-acb7-fb885840198c.071d16e3922d45c084b8.png",
     "static/media/DC1.jpg": "/static/media/DC1.49aae55d398474c44225.jpg",
     "static/media/D9D6D19D-C065-482C-A91A-102F9D28CAFD.jpg": "/static/media/D9D6D19D-C065-482C-A91A-102F9D28CAFD.e8a5f0dde7585c96df70.jpg",
     "static/media/DC2.jpg": "/static/media/DC2.369f82e34265f05640af.jpg",
     "static/media/3C.jpg": "/static/media/3C.37fe292c131cb1eeb265.jpg",
     "static/media/DC1Preview.jpg": "/static/media/DC1Preview.dc590a2d6e271f9080a1.jpg",
+    "static/media/6396f581-550a-4d7f-bd53-5cb8ec2fcbf7.jpg": "/static/media/6396f581-550a-4d7f-bd53-5cb8ec2fcbf7.a92869afcfe3bee75291.jpg",
+    "static/media/fa323822-1a24-4f38-a06a-a56c4324c3a5.jpg": "/static/media/fa323822-1a24-4f38-a06a-a56c4324c3a5.b93890efe10d9b5ac654.jpg",
+    "static/media/b4d05935-89cc-447e-ad6c-c84195fbaa8b.jpg": "/static/media/b4d05935-89cc-447e-ad6c-c84195fbaa8b.0dbac1ef03b1c4d8e239.jpg",
     "static/media/ST1Main.jpg": "/static/media/ST1Main.f8b3b4cfeb1962c2a82e.jpg",
+    "static/media/feadbfb8-5650-4acd-a6bb-8dce600a2924.jpg": "/static/media/feadbfb8-5650-4acd-a6bb-8dce600a2924.9b5da797c89de9f71594.jpg",
     "static/media/5163135093(2).jpg": "/static/media/5163135093(2).14133e97fa3c6379f64d.jpg",
     "static/media/ST1Preview.jpg": "/static/media/ST1Preview.20f8b7f7081af44751aa.jpg",
     "static/media/rrcacc.png": "/static/media/rrcacc.af7ea44b3f1feed9cc1e.png",
     "static/media/Screensho.jpg": "/static/media/Screensho.fa307e633b0627ddc7e0.jpg",
     "static/media/IMG-20250804-WA0015.jpg": "/static/media/IMG-20250804-WA0015.c823abe2b9c7e20ed769.jpg",
     "static/media/3B.jpg": "/static/media/3B.b37484b982878044a122.jpg",
+    "static/media/521c104e-1548-4204-aea7-177343704f2d.png": "/static/media/521c104e-1548-4204-aea7-177343704f2d.e610eeb4d13f6a7c57b4.png",
     "static/media/unnamed.jpg": "/static/media/unnamed.2fa04e96f66afa798672.jpg",
     "static/media/Santa Cruz bike.jpg": "/static/media/Santa Cruz bike.459b95fadcbf29e97ca7.jpg",
     "static/media/ST1Mobile.jpg": "/static/media/ST1Mobile.76d02ae6874a4910566e.jpg",
@@ -53,11 +61,11 @@
     "static/media/Default.png": "/static/media/Default.d6a7297ff9f1dbe72d56.png",
     "index.html": "/index.html",
     "main.2da6c8e0.css.map": "/static/css/main.2da6c8e0.css.map",
-    "main.c7ce6cce.js.map": "/static/js/main.c7ce6cce.js.map",
+    "main.d4bf14ab.js.map": "/static/js/main.d4bf14ab.js.map",
     "488.0534d642.chunk.js.map": "/static/js/488.0534d642.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2da6c8e0.css",
-    "static/js/main.c7ce6cce.js"
+    "static/js/main.d4bf14ab.js"
   ]
 }
