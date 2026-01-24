@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2da6c8e0.css",
-    "main.js": "/static/js/main.d4bf14ab.js",
+    "main.js": "/static/js/main.e0df1903.js",
     "static/js/488.0534d642.chunk.js": "/static/js/488.0534d642.chunk.js",
     "static/media/EnduranceLegionIG.mp4": "/static/media/EnduranceLegionIG.53e283474dcdf57a69e9.mp4",
     "static/media/RE1.jpg": "/static/media/RE1.38a08225a0a3fb2f7639.jpg",
@@ -29,6 +29,7 @@
     "static/media/feadbfb8-5650-4acd-a6bb-8dce600a2924.jpg": "/static/media/feadbfb8-5650-4acd-a6bb-8dce600a2924.9b5da797c89de9f71594.jpg",
     "static/media/5163135093(2).jpg": "/static/media/5163135093(2).14133e97fa3c6379f64d.jpg",
     "static/media/ST1Preview.jpg": "/static/media/ST1Preview.20f8b7f7081af44751aa.jpg",
+    "static/media/ce4bb1ce-bed6-4fc5-8978-2012ed7d9f2c.jpg": "/static/media/ce4bb1ce-bed6-4fc5-8978-2012ed7d9f2c.d5a2027a8e7f8855d577.jpg",
     "static/media/rrcacc.png": "/static/media/rrcacc.af7ea44b3f1feed9cc1e.png",
     "static/media/Screensho.jpg": "/static/media/Screensho.fa307e633b0627ddc7e0.jpg",
     "static/media/IMG-20250804-WA0015.jpg": "/static/media/IMG-20250804-WA0015.c823abe2b9c7e20ed769.jpg",
@@ -61,11 +62,11 @@
     "static/media/Default.png": "/static/media/Default.d6a7297ff9f1dbe72d56.png",
     "index.html": "/index.html",
     "main.2da6c8e0.css.map": "/static/css/main.2da6c8e0.css.map",
-    "main.d4bf14ab.js.map": "/static/js/main.d4bf14ab.js.map",
+    "main.e0df1903.js.map": "/static/js/main.e0df1903.js.map",
     "488.0534d642.chunk.js.map": "/static/js/488.0534d642.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2da6c8e0.css",
-    "static/js/main.d4bf14ab.js"
+    "static/js/main.e0df1903.js"
   ]
 }
