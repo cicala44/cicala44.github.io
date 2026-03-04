@@ -39,10 +39,10 @@ const NavBar = (props) => {
         if (windowSize.width > 1150) {
             return (
                 <div id="nav-button-section">
-                    <NavButton ref="#About" text="About" />
-                    <NavButton ref="#Services" text="Services" />
-                    <NavButton ref="#Testimonials" text="Testimonials" />
-                    <NavButton ref="#Contact" text="Contact" />
+                    <NavButton href="#About" text="About" />
+                    <NavButton href="#Services" text="Services" />
+                    <NavButton href="#Testimonials" text="Testimonials" />
+                    <NavButton href="#Contact" text="Contact" />
                 </div>
             )
         }
@@ -50,10 +50,10 @@ const NavBar = (props) => {
             return (
                 <div className="nav-mobile-menu-container">
                     <div id="banner-nav-section-mobile" className="hidden">
-                        <NavButton ref="#About" text="About" mobileHandler={toggleHamburger} />
-                        <NavButton ref="#Services" text="Services" mobileHandler={toggleHamburger} />
-                        <NavButton ref="#Testimonials" text="Testimonials" mobileHandler={toggleHamburger} />
-                        <NavButton ref="#Contact" text="Contact" />
+                        <NavButton href="#About" text="About" mobileHandler={toggleHamburger} />
+                        <NavButton href="#Services" text="Services" mobileHandler={toggleHamburger} />
+                        <NavButton href="#Testimonials" text="Testimonials" mobileHandler={toggleHamburger} />
+                        <NavButton href="#Contact" text="Contact" />
                     </div>
                     <div id="hamburger" onClick={() => toggleHamburger()}>
                         <div id="bar1" className="bar"></div>

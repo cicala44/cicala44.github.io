@@ -1,19 +1,18 @@
 import "./NavButton.css"
 
-const NavButton = (props) =>
-{
+const NavButton = (props) => {
     const attemptMobileHandle = () => {
-        if(props.mobileHandler !== undefined) {
+        if (props.mobileHandler !== undefined) {
             props.mobileHandler();
         }
     }
 
-    return(
-        <div className="nav-button">
-            <a href={props.ref} className="anchor-text" onClick={attemptMobileHandle}>
+    return (
+        <a href={props.href} className="anchor-text" onClick={attemptMobileHandle}>
+            <div className="nav-button">
                 {props.text}
-            </a>
-        </div>
+            </div>
+        </a>
     );
 }
 export default NavButton;
