@@ -3,8 +3,11 @@ import PreviewTestimonialCard from "../components/PreviewTestimonialCard";
 import "./TestimonialSection.css";
 import "../components/PreviewTestimonialCard.css"
 import "../App.css"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "motion/react";
+
+const MOBILE_WIDTH = 550;
+const SWIPE_THRESHOLD = 50;
 
 const variants = {
     main: direction => ({
@@ -35,10 +38,34 @@ const variants = {
     }),
 };
 
-const TestimonialSection = (props) => {
+const TestimonialSection = () => {
 
     const [loadIndex, setLoadIndex] = useState(0);
     const [direction, setDirection] = useState('right');
+    const [isViewingCard, setIsViewingCard] = useState(false);
+    const [windowSize, setWindowSize] = useState({
+        width: window.innerWidth ? window.innerWidth : undefined,
+        height: window.innerHeight ? window.innerHeight : undefined,
+    });
+
+    const isMobile = windowSize.width < MOBILE_WIDTH;
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowSize({
+                width: window.innerWidth,
+                height: window.innerHeight
+            });
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        handleResize();
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        }
+    }, []);
 
     const tickLoadIndex = (direction) => {
         if (direction === 'right') {
@@ -51,9 +78,56 @@ const TestimonialSection = (props) => {
         }
     }
 
-    const previewCards = [testimonials[(((loadIndex - 2) % testimonials.length) + testimonials.length) % testimonials.length], testimonials[(((loadIndex - 1) % testimonials.length) + testimonials.length) % testimonials.length], testimonials[loadIndex], testimonials[(loadIndex + 1) % testimonials.length], testimonials[(((loadIndex + 2) % testimonials.length) + testimonials.length) % testimonials.length]].map((testimonial, index) => {
+    const toggleIsViewingCard = () => {
+        setIsViewingCard(!isViewingCard);
+    }
+
+    const handleOnClick = (index) => {
+        if (isMobile)
+            return;
+        if (index === 1) {
+            tickLoadIndex('left');
+        }
+        else if (index === 3) {
+            tickLoadIndex('right');
+        }
+    }
+
+    const handleOnDragEnd = (_, info) => {
+        if (!isMobile)
+            return;
+
+        const offsetX = info.offset.x;
+
+        if (Math.abs(offsetX) < SWIPE_THRESHOLD) {
+            return;
+        }
+
+        if (offsetX > 0) {
+            tickLoadIndex('left');
+        } else {
+            tickLoadIndex('right');
+        }
+    }
+
+    const previewCards = [testimonials[
+        (((loadIndex - 2) % testimonials.length) + testimonials.length) % testimonials.length],
+    testimonials[(((loadIndex - 1) % testimonials.length) + testimonials.length) % testimonials.length],
+    testimonials[loadIndex], testimonials[(loadIndex + 1) % testimonials.length],
+    testimonials[(((loadIndex + 2) % testimonials.length) + testimonials.length) % testimonials.length]
+    ].map((testimonial, index) => {
+        const isMainCard = index === 2;
+        const canMobileDrag = isMobile && isMainCard && !isViewingCard;
         return (
-            <motion.div id={index === 1 ? "left" : index === 3 ? "right" : index < 1 ? "left-hidden" : index > 3 ? "right-hidden" : "main"} onClick={() => (index === 1 ? tickLoadIndex('left') : index === 3 ? tickLoadIndex('right') : null)}
+            <motion.div
+                id={index === 1 ? "left" : index === 3 ? "right" : index < 1 ? "left-hidden" : index > 3 ? "right-hidden" : "main"}
+                onClick={() => handleOnClick(index)}
+                drag={canMobileDrag ? "x" : false}
+                dragConstraints={{ left: 0, right: 0 }}
+                dragElastic={0.2}
+                dragMomentum={false}
+                onDragEnd={canMobileDrag ? handleOnDragEnd : null}
+                dragSnapToOrigin
                 key={testimonial.name + testimonial.id}
                 custom={direction}
                 variants={variants}
@@ -70,7 +144,8 @@ const TestimonialSection = (props) => {
                     testimonial={testimonial.testimonial}
                     testimonialImages={testimonial.testimonialImages}
                     mobileImage={testimonial.mobileImage}
-                    isMain={index === 2}
+                    isMain={isMainCard}
+                    onClick={toggleIsViewingCard}
                 />
             </motion.div>
         );

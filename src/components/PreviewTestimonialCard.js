@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import "./PreviewTestimonialCard.css";
 import TestimonialCard from "./TestimonialCard";
 import { AnimatePresence, motion } from "motion/react";
@@ -40,12 +40,35 @@ const variants = {
     )
 };
 
-const PreviewTestimonialCard = ({ id, name, title, previewImage, testimonial, testimonialImages, mobileImage, isMain }) => {
+const PreviewTestimonialCard = ({ id, name, title, previewImage, testimonial, testimonialImages, mobileImage, isMain, onClick }) => {
     const [displayContent, setDisplayContent] = useState(false);
     const [isInViewPort, setIsInViewport] = useState(false);
     const testimonyCardAnimationWrapperSize = useRef([0, 0]);
     const exitingAnimationPlaying = useRef(false);
     const viewPortRef = useRef(null);
+
+    const displayCard = useCallback(() => {
+        let leftElement = document.getElementById("left");
+        leftElement.className = "slide-out-left";
+        leftElement.style.pointerEvents = "none";
+        let rightElement = document.getElementById("right");
+        rightElement.className = "slide-out-right";
+        rightElement.style.pointerEvents = "none";
+        onClick();
+        setDisplayContent(true);
+    }, [onClick]);
+
+    const exitDisplayCard = useCallback(() => {
+        exitingAnimationPlaying.current = true;
+        let leftElement = document.getElementById("left");
+        leftElement.className = "slide-back-left";
+        leftElement.style.pointerEvents = "none";
+        let rightElement = document.getElementById("right");
+        rightElement.className = "slide-back-right";
+        rightElement.style.pointerEvents = "none";
+        onClick();
+        setDisplayContent(false);
+    }, [onClick]);
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
@@ -75,28 +98,7 @@ const PreviewTestimonialCard = ({ id, name, title, previewImage, testimonial, te
         if (displayContent && !isInViewPort) {
             exitDisplayCard();
         }
-    }, [displayContent, isInViewPort]);
-
-    const displayCard = () => {
-        let leftElement = document.getElementById("left");
-        leftElement.className = "slide-out-left";
-        leftElement.style.pointerEvents = "none";
-        let rightElement = document.getElementById("right");
-        rightElement.className = "slide-out-right";
-        rightElement.style.pointerEvents = "none";
-        setDisplayContent(true);
-    }
-
-    const exitDisplayCard = () => {
-        exitingAnimationPlaying.current = true;
-        let leftElement = document.getElementById("left");
-        leftElement.className = "slide-back-left";
-        leftElement.style.pointerEvents = "none";
-        let rightElement = document.getElementById("right");
-        rightElement.className = "slide-back-right";
-        rightElement.style.pointerEvents = "none";
-        setDisplayContent(false);
-    }
+    }, [displayContent, isInViewPort, exitDisplayCard]);
 
     const beginAnimation = () => {
         hideExitButton();
