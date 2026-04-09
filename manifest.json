@@ -5,7 +5,7 @@
     {
       "src": "./assets/banner.jpg",
       "type": "image/jpg",
-      "sizes": "500/131"
+      "sizes": "500x131"
     }
   ],
   "start_url": ".",
